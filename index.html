@@ -3,21 +3,20 @@
 
 <head>
 
-	<!-- META TAGS -->
+	<!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="autori" content="Alexander Nettenbreijers, Andrea Delli,">
-    <meta name="data" content="maggio 2019">
+    <meta name="autori" content="Andrea Delli, Alexander Nettenbreijers">
+    <meta name="anno-produzione" content="2019">
     <meta name="descrizione" content="Firebird">
-    <meta name="keywords" content="HTML, firewall, logged, login, homepage, info, connessione">
+    <meta name="keywords" content="HTML, firewall, firebird, logged, login, homepage, info, connessione">
 
-	<!-- REFERENCES -->
+	<!-- References -->
     <link rel="shortcut icon" href="./resources/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-	<!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="bundle/bootstrap/bootstrap.css">
-	<script src="bundle/bootstrap/bootstrap.min.js"></script>
-    <!-- FONT-AWESOME -->
+	<!-- Bootstrap  CSS-->
+    <link rel="stylesheet" href="bundle/bootstrap/bootstrap.min.css">
+    <!-- Font-Awesome -->
 	<link rel="stylesheet" href="bundle/font-awesome/fontawesome.min.css">
 	<link rel="stylesheet" href="bundle/font-awesome/regular.min.css">
 	<link rel="stylesheet" href="bundle/font-awesome/solid.min.css">
@@ -87,7 +86,7 @@
 									<div id="INFO" class="AREA">
 									<!--[INFO_START]-->
 									<div class="alert alert-info">
-										<strong><!--[INFOTEXT_START]--><p>IP: 172.16.5.217</p><p>E-Mail: nettenbreije.alexander@itismeucci.com</p><p>Nome: Alexander Nettenbreijers</p><p>Connesso alla rete: Rete Cablata</p><p>Gruppo di appartenenza: Studenti</p><p>Connesso il : 15/05/2019 08:14:42</p><p>Dati Ricevuti : 1.98 MB</p><p>Dati Inviati : 344.98 KB</p><p>Velocità media Download : 13.2 KB/sec</p><p>Velocità media Upload : 1.35 KB/sec</p><p></p><!--[INFOTEXT_END]--></strong>
+										<strong><!--[INFOTEXT_START]--><p>IP: 172.16.13.37</p><p>E-Mail: delli.andrea@itismeucci.com</p><p>Nome: Andrea Delli</p><p>Connesso alla rete: Rete Cablata</p><p>Gruppo di appartenenza: Studenti</p><p>Connesso il : 15/05/2019 08:14:42</p><p>Dati Ricevuti : 1.98 MB</p><p>Dati Inviati : 344.98 KB</p><p>Velocità media Download : 13.2 KB/sec</p><p>Velocità media Upload : 1.35 KB/sec</p><p></p><!--[INFOTEXT_END]--></strong>
 									</div>
 									<!--[INFO_END]-->
                                     </div>
@@ -96,34 +95,6 @@
     </div>
 	
 	<hr class="sep half">
-	
-	<!-- Pre-creati elementi utilizati dai .JS -->
-	<div id="objects">
-	
-		<!-- Certificato -->
-		<div id="downloader-obj">
-			<div class="DownloadArea">
-				<div id="Download" onclick="alert('Error: nessun certificato assegnato.')"><i class="fas fa-file-download"></i></div> 
-				<div class="text"><span >Certificato per </span> <span class="OS"></span> </div>
-				<hr>
-				<div class="popup"><a id="Tutorial" href="tutorials/index.html">Come installare il certificato</a></div>
-				<div id="popup" class="popup"><span>Non hai <span class="OS"></span>?</span></div>
-			</div>
-		</div>
-		
-		<div id="screen-obj"></div>
-		
-		<div id="modal-obj">
-			<div id="MODAL_CLOSE"><i class="fas fa-times"></i></div>
-            <table>
-                    <tr class="head"><th></th><th>Nome file</th><th>OS</th></tr>
-                    <tr><th> <a href="cert.der"><i class="fas fa-download"></i></a></th><td>cert.der</td><td>windows</td></tr>
-                    <tr><th> <a href="cert.pem"><i class="fas fa-download"></i></a></th><td>cert.pem</td><td>android</td></tr>
-                    <tr><th> <a href="cert.pem"><i class="fas fa-download"></i></a></th><td>cert.pem</td><td>ios</td></tr>
-            </table>
-			<hr>
-			<a href="tutorials/index.html">Come installare il certificato</a>
-		</div>
 		
 		<!-- Toggle -->
 		<div id="toggle-obj">
@@ -155,12 +126,14 @@
 	</div>
 	
 	
-    <img src="resources/logo.png" class="background-logo" alt="Logo ITIS Meucci">
+	<img src="resources/logo.png" class="background-logo" alt="Logo ITIS Meucci">
+	<!--jQuery-->
 	<script src="js/$.js"></script>
+	<!--Bootstrap JS-->
+	<script src="bundle/bootstrap/bootstrap.min.js"></script>
+
 	<script src="js/script.js"></script>
 	<script src="js/TableToggle.js"></script>
-	<script src="js/getOS.js"></script>
-	<script src="js/cert.js"></script>
 	
 </body>
 
