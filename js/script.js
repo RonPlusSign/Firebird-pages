@@ -10,7 +10,7 @@
 ████████████████████████████████████████████████████████████│!│-TITLE-
 ────────────────────────────────────────────────────────────┤♦│
 
-Con il titolo posso controllare in che stato è FireBird (Connesso/Non Connesso/Denied)
+Con il titolo è possibile controllare in che stato è Firebird (Connesso/Non Connesso/Denied)
 
 */
 
@@ -26,7 +26,7 @@ switch(str){
 	// index
 	case "INDEX":
 		$("#TITLE h2").addClass("blue");
-		$("#TITLE h2").text("Script.js edited this");
+		$("#TITLE h2").text("Pagina di accesso a Firebird");
 		status = "INDEX"
 		break;
 	
@@ -51,46 +51,6 @@ switch(str){
 		status = "DENIED"
 		break;
 
-}
-
-} catch(ex) {}
-
-/*
-────────────────────────────────────────────────────────────┤♦│
-████████████████████████████████████████████████████████████│!│-DOWNLOADER-
-────────────────────────────────────────────────────────────┤♦│
-
-L'area per scaricare il certificato con modale
-lo script per la modale è in "cert.js"
-lo script per vedere l'OS è in "getOS.js"
-
-*/
-
-try {
-
-function appendDownloader(){
-	$("#card").append($("#downloader-obj"));
-}
-
-switch(status){
-	
-	// index
-	case "INDEX":
-		appendDownloader();
-		break;
-	
-	// not connected
-	case "NOT_CONNECTED":
-		appendDownloader();
-		break;
-	
-	// connected
-	case "CONNECTED":
-		break;
-	
-	// denied
-	case "DENIED":
-		break;
 }
 
 } catch(ex) {}
@@ -135,7 +95,6 @@ if(str != ""){
 
 Da una serie di <p>, ad una tabella.
 La gestione del toggle è in "tableToggle.js"
-
 */
 
 try {
