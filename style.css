@@ -82,7 +82,7 @@ body, html {
 }
 
 .card::before {
-    background: linear-gradient(to right, #e35b55 20%, #409dd2 20%, #409dd2 50%, #40ad6f 50%, #40ad6f 80%, #fad240 80%, #fad240 100%);
+    background: linear-gradient(to right, #e35b55 25%, #409dd2 25%, #409dd2 50%, #40ad6f 50%, #40ad6f 75%, #fad240 75%, #fad240 100%);
     border-radius: 3px;
     content: '';
     height: 10px;
@@ -408,7 +408,7 @@ width: fit-content;
 	width: 1.8em;
 	height: 1.8em;
 }
-/* /* Animazione dopo aver premuto il bottone di login o logout mentre si aspetta che il server invii una risposta * /
+
 .google:focus::after, .google:focus::before{
 	display: flex;
 	flex-direction: column;
@@ -433,7 +433,161 @@ width: fit-content;
 @keyframes loading { 
     0%{transform: translate(-50%, -2.95em)  rotate(720deg);}
 	100%{transform: translate(-50%, -2.95em)  rotate(0deg);}
-} */
+}
+
+/*
+────────────────────────────────────────────────────────────┤♦│
+████████████████████████████████████████████████████████████│!│-MODAL
+────────────────────────────────────────────────────────────┤♦│
+*/
+
+.DownloadArea{
+	text-align: center;
+}
+
+.DownloadArea table{
+	width: 100%;
+}
+
+.DownloadArea table th{
+	text-align: right;
+}
+
+.DownloadArea table td{
+	text-align: left;
+}
+
+.DownloadArea .text{
+	font-size: 1em;
+	color: #3facea;
+
+}
+
+.DownloadArea #Download{
+
+	transform: rotate(-15deg);
+	color: #93d0f3;
+	text-align: center;
+	padding-top: 0.14em;
+	font-size: 1.75em;
+	width: 1.75em;
+	height: 1.75em;
+	cursor: pointer;
+	background-color: transparent;
+	transition: 0.2s;
+	margin: 0em auto;
+	position:relative;
+	top: 0.2em;
+
+}
+
+.DownloadArea #Download:hover{
+	
+	transform: rotate(0.1deg);
+	transition: 0.2s;
+	color: #3facea;
+}
+
+.popup{
+	text-align: right;
+}
+
+.popup span,.popup a{
+	color: #777777;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.popup:hover span, .popup:hover a{
+	transition: 0.2s;
+	color: #3facea;
+	text-decoration: none;
+}
+
+#modal-obj{
+
+	display: none;
+
+	z-index: 2;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 1em;
+	padding: 2.5em;
+
+	background-color: white;
+	border: 1px solid #dadada;
+}
+
+#modal-obj .head th{
+	font-weight: bold;
+	text-align: center;
+}
+
+#modal-obj table{
+		width: 100%;
+		background-color: white;
+}
+
+#modal-obj td, #modal-obj th{
+	padding: 0.3em;
+	border: 1px solid #dadada;
+}
+
+#modal-obj th{
+	font-size: 1.5em;
+}
+
+#screen-obj{
+	display: none;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+#MODAL_CLOSE{
+	transform: translate(-100%, -0%);
+	position: absolute;
+	left: 100%;
+	top: 0%;
+	transition: 0.2s;
+	width: 2.5em;
+	height: 2.5em;
+	cursor: pointer;
+}
+
+#MODAL_CLOSE i{
+	transform: translate(-50%, -50%);
+	position: relative;
+	left: 50%;
+	top: 50%;
+}
+
+#MODAL_CLOSE:hover i{
+	color: #007cc3;
+	transition: 0.2s;
+}
+
+@keyframes up {
+	from {
+		top: 55%;
+		opacity: 0
+	}
+	to {
+		top: 50%;
+		opacity: 1
+	}
+}
+
+.up{
+	animation-name: up;
+	animation-duration: 0.5s;
+	animation-timing-function: cubic-bezier(0, .01, 0, .99);
+}
 
 /*
 ────────────────────────────────────────────────────────────┤♦│

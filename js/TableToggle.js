@@ -22,7 +22,7 @@ async function close() {
 	
 	deg -= 180;
 	
-	// se hai cambiato "RowAmmountClosed", gioca un po' con quel "-1"
+	// se hai cambiato "RowAmmountClosed", gioca un po con quel "-1"
 	toggler[0].style.transform = "rotate("+ deg +"deg)";
 	for(var i = trs.length-(RowAmmountClosed-1); i > RowAmmountClosed-1; i--){
 		trs[i].style.display = "none";
