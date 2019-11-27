@@ -23,7 +23,7 @@ Il lavoro da noi svolto è stato rifare i due file html (index.html e denied.htm
 | denied.html          | Pagina utilizzata per mostrare un errore all'utente (esempio: contenuto bloccato) |
 | style.css            | Pagina di stile principale                                                        |
 | js/$.js              | jQuery                                                                            |
-| js/TableToggle.js    | funzione che gestisce la <table> con informazioni sull’utente                     |
+| js/TableToggle.js    | funzione che gestisce la \<table> con informazioni sull’utente                     |
 | js/script.js         | funzione dedicata a modificare l’HTML ricevuto nel modo desiderato                |
 | bundle/bootstrap/    | Bootstrap v4.4                                                                    |
 | bundle/font-awesome/ | Font-Awesome Free v5.8.2                                                          |
