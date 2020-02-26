@@ -342,26 +342,38 @@ html {
 }
 
 .btn-edited:hover {
-	/* background-color: #dedeff; */
+	background-color: #dedeff;
 	transition: 0.25s;
 	box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
 	background-color: rgba(137, 188, 239, 0.3);
 }
 
 .btn-blue {
-	background-color: rgba(137, 188, 239, 0.1);
+	background-color: rgba(137, 188, 239, 0.2);
 }
 
 .btn-blue:hover {
-	background-color: rgba(137, 188, 239, 0.3);
+	background-color: rgba(137, 188, 239, 0.4);
+}
+
+.btn-blue:focus {
+	box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
+	background-color: rgba(137, 188, 239, 0.5);
+	outline: none;
 }
 
 .btn-green {
-	background-color: rgba(138, 242, 162, 0.1);
+	background-color: rgba(138, 242, 162, 0.2);
 }
 
 .btn-green:hover {
-	background-color: rgba(138, 242, 162, 0.3);
+	background-color: rgba(138, 242, 162, 0.4);
+}
+
+.btn-green:focus {
+	box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
+	background-color: rgba(138, 242, 162, 0.5);
+	outline: none;
 }
 
 .btn-edited img {
@@ -385,17 +397,17 @@ html {
 	margin-left: 15px;
 }
 
-.btn-edited:hover span {
+.btn-edited:hover span, .btn-edited:focus span {
 	transition: 0.25s;
 	margin-left: 35px;
 }
 
-.btn-edited:hover img {
+.btn-edited:hover img, .btn-edited:focus img {
 	transition: 0.5s;
 	transform: rotate(360deg);
 }
 
-.google:hover img {
+.google:hover img, .google:focus img {
 	transform: rotate(720deg);
 	transition: 0.5s;
 }
@@ -408,21 +420,6 @@ html {
 	padding: 0.1em;
 	height: 2.2em;
 	width: 2.2em;
-}
-
-.google:focus span,
-.google:focus img,
-.google:focus td {
-	opacity: 0;
-	border-right: 1px solid transparent;
-}
-
-.google:focus {
-	transition: 0.2s;
-	background-color: transparent;
-	border: 1px solid transparent;
-	box-shadow: 0px 5px 5px -2px transparent;
-	outline: none;
 }
 
 .google::after,
