@@ -173,7 +173,8 @@ html {
 */
 @media (min-width: 1281px) {
 	.card {
-		width: 35vw !important;
+		min-width: 30vw !important;
+		max-width: 35vw;
 	}
 
 }
@@ -193,9 +194,9 @@ html {
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 	.card {
-		width: 55vw !important;
+		width: 60vw !important;
 	}
 }
 
@@ -205,7 +206,7 @@ html {
   */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 	.card {
-		width: 70vw !important;
+		width: 55vw !important;
 	}
 }
 
