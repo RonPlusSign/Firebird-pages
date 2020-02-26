@@ -13,22 +13,23 @@ main palette:
 */
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: URL('resources/font/Ubuntu-Regular.ttf') format('truetype');
+	font-family: 'Ubuntu';
+	src: URL('resources/font/Ubuntu-Regular.ttf') format('truetype');
 }
 
-body, html {
+body,
+html {
 	width: 100%;
 	height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 1.05em;
+	padding: 0;
+	margin: 0;
+	font-size: 1.05em;
 }
 
-html{
+html {
 	display: none;
 }
-	
+
 
 /*
 ────────────────────────────────────────────────────────────┤♦│
@@ -36,7 +37,7 @@ html{
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-hr.sep{
+hr.sep {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -44,21 +45,65 @@ hr.sep{
 }
 
 /* 0 -> 5 */
-hr.half{ height: 0.5em; }
-hr.one{ height: 1em; }
-hr.onehalf{ height: 1.5em; }
-hr.two{ height: 2em; }
-hr.twohalf{ height: 2.5em; }
-hr.three{ height: 3em; }
-hr.threehalf{ height: 3.5em; }
-hr.four{ height: 4em; }
-hr.fourhalf{ height: 4.5em; }
-hr.five{ height: 5em; }
-hr.fivehalf{ height: 5.5em; }
-hr.six{ height: 6em; }
-hr.sixhalf{ height: 6.5em; }
-hr.seven{ height: 7em; }
-hr.sevenhalf{ height: 7.5em; }
+hr.half {
+	height: 0.5em;
+}
+
+hr.one {
+	height: 1em;
+}
+
+hr.onehalf {
+	height: 1.5em;
+}
+
+hr.two {
+	height: 2em;
+}
+
+hr.twohalf {
+	height: 2.5em;
+}
+
+hr.three {
+	height: 3em;
+}
+
+hr.threehalf {
+	height: 3.5em;
+}
+
+hr.four {
+	height: 4em;
+}
+
+hr.fourhalf {
+	height: 4.5em;
+}
+
+hr.five {
+	height: 5em;
+}
+
+hr.fivehalf {
+	height: 5.5em;
+}
+
+hr.six {
+	height: 6em;
+}
+
+hr.sixhalf {
+	height: 6.5em;
+}
+
+hr.seven {
+	height: 7em;
+}
+
+hr.sevenhalf {
+	height: 7.5em;
+}
 
 /*
 ────────────────────────────────────────────────────────────┤♦│
@@ -66,52 +111,53 @@ hr.sevenhalf{ height: 7.5em; }
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-body, html {
-    padding: 0;
-    margin: 0;
-    font-size: 1.05em;
+body,
+html {
+	padding: 0;
+	margin: 0;
+	font-size: 1.05em;
 }
 
 .card {
 	font-family: Ubuntu;
 	border: 2px solid #eaeaea !important;
-    background-color: white !important;
-    margin: 0 auto;
-    word-break: break-word;
-    box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
+	background-color: white !important;
+	margin: 0 auto 5vh auto;
+	word-break: break-word;
+	box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
 }
 
 .card::before {
-    background: linear-gradient(to right, #e35b55 20%, #409dd2 20%, #409dd2 50%, #40ad6f 50%, #40ad6f 80%, #fad240 80%, #fad240 100%);
-    border-radius: 3px;
-    content: '';
-    height: 10px;
-    right: 0;
-    left: 0;
-    top: 0;
+	background: linear-gradient(to right, #e35b55 20%, #409dd2 20%, #409dd2 50%, #40ad6f 50%, #40ad6f 80%, #fad240 80%, #fad240 100%);
+	border-radius: 3px;
+	content: '';
+	height: 10px;
+	right: 0;
+	left: 0;
+	top: 0;
 }
 
 .card-red::before {
-    background: #e35b55;
-    border-radius: 3px;
-    content: '';
-    height: 10px;
-    right: 0;
-    left: 0;
-    top: 0;
+	background: #e35b55;
+	border-radius: 3px;
+	content: '';
+	height: 10px;
+	right: 0;
+	left: 0;
+	top: 0;
 }
 
 #logo {
-    transform: translate(-50%, -50%);
-    top: 0px;
-    left: 50.5%;
-    position: absolute;
-    width: 20%;
-    min-width: 180px;
-    max-width: 230px;
+	transform: translate(-50%, -50%);
+	top: 0px;
+	left: 50.5%;
+	position: absolute;
+	width: 20%;
+	min-width: 180px;
+	max-width: 230px;
 }
 
-.card-inside{
+.card-inside {
 	padding: 2em;
 }
 
@@ -125,69 +171,65 @@ body, html {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
-@media (min-width: 1281px) {.card { 
+@media (min-width: 1281px) {
+	.card {
+		width: 35vw !important;
+	}
 
-width: fit-content;
-	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-	width: -moz-max-content;    /* Firefox/Gecko */
-	width: -webkit-max-content; /* Chrome */
-    min-width: 400px !important;
-
-}}
+}
 
 /* 
     ##Device = Laptops, Desktops
     ##Screen = B/w 1025px to 1280px
 */
-@media (min-width: 1025px) and (max-width: 1280px) {.card { 
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.card {
+		width: 45vw !important;
+	}
 
-width: fit-content;
-	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-	width: -moz-max-content;    /* Firefox/Gecko */
-	width: -webkit-max-content; /* Chrome */
-    min-width: 400px !important;
-
-}}
+}
 
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
   */
-@media (min-width: 768px) and (max-width: 1024px) {.card { 
-
-width: fit-content;
-	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-	width: -moz-max-content;    /* Firefox/Gecko */
-	width: -webkit-max-content; /* Chrome */
-    min-width: 400px !important;
-
-}}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.card {
+		width: 55vw !important;
+	}
+}
 
 /* 
     ##Device = Tablets, Ipads (landscape)
     ##Screen = B/w 768px to 1024px
   */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {.card { 
-
-width: fit-content;
-	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-	width: -moz-max-content;    /* Firefox/Gecko */
-	width: -webkit-max-content; /* Chrome */
-    min-width: 400px !important;
-
-}}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.card {
+		width: 70vw !important;
+	}
+}
 
 /* 
     ##Device = Low Resolution Tablets, Mobiles (Landscape)
     ##Screen = B/w 481px to 767px
   */
-@media (min-width: 481px) and (max-width: 767px) {.card {max-width: 80%;}}
+@media (min-width: 481px) and (max-width: 767px) {
+	.card {
+		max-width: 80vw;
+		min-width: 70vw;
+	}
+}
 
 /* 
     ##Device = Most of the Smartphones Mobiles (Portrait)
     ##Screen = B/w 320px to 479px
   */
-@media (max-width: 480px) {.card {max-width: 95%;}}
+@media (max-width: 480px) {
+	.card {
+		max-width: 95vw !important;
+		min-width: 380px !important;
+	}
+}
 
 /*
 ────────────────────────────────────────────────────────────┤♦│
@@ -195,26 +237,26 @@ width: fit-content;
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-.form-signin-heading{
+.form-signin-heading {
 	text-align: center;
 	padding-bottom: 0.2em;
 	background-color: white;
 	font-size: 1.75em;
 }
 
-.red{
+.red {
 	color: #ee2222;
 	border-bottom: 1px solid #ee2222;
 	box-shadow: 0px 5px 5px -5px rgba(238, 34, 34, 0.5);
 }
 
-.blue{
+.blue {
 	color: #3facea;
 	border-bottom: 1px solid #3facea;
 	box-shadow: 0px 5px 5px -5px rgba(63, 172, 234, 0.5);
 }
 
-.green{
+.green {
 	color: #40ad6f;
 	border-bottom: 1px solid #40ad6f;
 	box-shadow: 0px 5px 5px -5px rgba(64, 173, 111, 0.5);
@@ -242,12 +284,12 @@ width: fit-content;
 	background-color: #c0e4cf;
 }
 
-#INFO{
+#INFO {
 	overflow: auto;
 	border-radius: 0.5em;
 }
 
-#INFO table{
+#INFO table {
 	font-family: monospace;
 	width: 100%;
 	font-size: 1em;
@@ -259,7 +301,7 @@ width: fit-content;
 	padding-left: 0.5em;
 }
 
-#INFO table i{
+#INFO table i {
 	opacity: 0.5;
 	padding-right: 0.25em;
 }
@@ -305,19 +347,19 @@ width: fit-content;
 	background-color: rgba(137, 188, 239, 0.3);
 }
 
-.btn-blue{
+.btn-blue {
 	background-color: rgba(137, 188, 239, 0.1);
 }
 
-.btn-blue:hover{
+.btn-blue:hover {
 	background-color: rgba(137, 188, 239, 0.3);
 }
 
-.btn-green{
+.btn-green {
 	background-color: rgba(138, 242, 162, 0.1);
 }
 
-.btn-green:hover{
+.btn-green:hover {
 	background-color: rgba(138, 242, 162, 0.3);
 }
 
@@ -352,12 +394,12 @@ width: fit-content;
 	transform: rotate(360deg);
 }
 
-.google:hover img{
+.google:hover img {
 	transform: rotate(720deg);
 	transition: 0.5s;
 }
 
-.google img{
+.google img {
 	transform: rotate(360deg);
 	transition: 0.5s;
 	background-color: white;
@@ -367,12 +409,14 @@ width: fit-content;
 	width: 2.2em;
 }
 
-.google:focus span,.google:focus img, .google:focus td{
+.google:focus span,
+.google:focus img,
+.google:focus td {
 	opacity: 0;
 	border-right: 1px solid transparent;
 }
 
-.google:focus{
+.google:focus {
 	transition: 0.2s;
 	background-color: transparent;
 	border: 1px solid transparent;
@@ -380,60 +424,35 @@ width: fit-content;
 	outline: none;
 }
 
-.google::after, .google::before{
+.google::after,
+.google::before {
 
 	position: absolute;
-	left:50%;
+	left: 50%;
 
 	text-align: right;
-	
+
 	content: ' ';
 	background: transparent;
 
 	border-radius: 50%;
-	
+
 	opacity: 0;
 	animation: none
 }
 
-.google::after{
+.google::after {
 	transform: translate(-50%, -2.95em);
 	width: 3em;
 	height: 3em;
 }
 
-.google::before{
+.google::before {
 	transform: translate(-50%, 0.6em);
 	z-index: 2;
 	width: 1.8em;
 	height: 1.8em;
 }
-/* /* Animazione dopo aver premuto il bottone di login o logout mentre si aspetta che il server invii una risposta * /
-.google:focus::after, .google:focus::before{
-	display: flex;
-	flex-direction: column;
-
-	opacity: 1;
-	transition: 0.5s;
-	border: 2px solid white;
-	content: ' ';
-
-	box-shadow: 0px 0px 0px 0.2em rgba(0,0,0,0.25);
-}
-
-.google:focus::before{
-	background: white;
-}
-
-.google:focus::after{
-	animation: loading 2s infinite;
-	background: linear-gradient(to right, #da241d 20%, #e35b55 20%, #e35b55 22%, #007cc3 22%, #007cc3 49%, #409dd2 49%, #409dd2 51%, #00923f 51%, #00923f 78%, #40ad6f 78%, #40ad6f 80%, #f8c300 80%, #f8c300 100%);
-}
-
-@keyframes loading { 
-    0%{transform: translate(-50%, -2.95em)  rotate(720deg);}
-	100%{transform: translate(-50%, -2.95em)  rotate(0deg);}
-} */
 
 /*
 ────────────────────────────────────────────────────────────┤♦│
@@ -445,7 +464,7 @@ width: fit-content;
 	overflow: auto;
 }
 
-#DENIED table{
+#DENIED table {
 	width: 100%;
 	background-color: white;
 	font-size: 1em;
@@ -457,15 +476,15 @@ width: fit-content;
 	padding-right: 0.5em;
 }
 
-.alertExclamation{
+.alertExclamation {
 	width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-.alertExclamation i{
+.alertExclamation i {
 	position: relative;
-	left:50%;
+	left: 50%;
 	color: #e35b55;
 	font-size: 250%;
 	animation: pulse 3s infinite;
@@ -475,24 +494,31 @@ width: fit-content;
 	0% {
 		transform: translate(-50%, 0%) rotate(0deg)
 	}
+
 	45% {
 		transform: translate(-50%, -0%) rotate(-10deg)
 	}
+
 	50% {
 		transform: translate(-50%, -0%) rotate(10deg)
 	}
+
 	55% {
 		transform: translate(-50%, -0%) rotate(-10deg)
 	}
+
 	60% {
 		transform: translate(-50%, -0%) rotate(5deg)
 	}
+
 	65% {
 		transform: translate(-50%, -0%) rotate(-2.5deg)
 	}
+
 	70% {
 		transform: translate(-50%, -0%) rotate(0deg)
 	}
+
 	100% {
 		transform: translate(-50%, -0%) rotate(0deg)
 	}
@@ -505,22 +531,28 @@ width: fit-content;
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-.alert{
+.alert {
 	border-radius: 0 !important;
 	border: 0 !important;
 	margin-bottom: 0 !important;
 }
 
-.alert-danger{
+.alert-danger {
 	color: rgba(238, 34, 34, 1) !important;
 	border-left: 1px dashed rgba(238, 34, 34, 1) !important;
 	border-right: 1px dashed rgba(238, 34, 34, 1) !important;
 }
 
-.alert-success{
-	color: rgba(64, 173, 111, 1) !important;
+.alert-success {
+	color: rgb(45, 156, 93) !important;
 	border-left: 1px dashed rgba(64, 173, 111, 1) !important;
 	border-right: 1px dashed rgba(64, 173, 111, 1) !important;
+}
+
+.alert-primary {
+	color: rgb(37, 102, 155) !important;
+	border-left: 1px dashed rgb(24, 78, 122) !important;
+	border-right: 1px dashed rgb(24, 78, 122) !important;
 }
 
 /*
@@ -529,11 +561,11 @@ width: fit-content;
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-#objects{
+#objects {
 	display: none;
 }
 
-.background-logo{
+.background-logo {
 	z-index: -2;
 	width: 20em;
 	position: fixed;
