@@ -36,64 +36,68 @@
 
 		<div class="card-inside" id="card">
 
-			<div id="TITLE" class="AREA">
-				<!--[TITLE_START]-->
-				<h2 class="form-signin-heading"><!--[TITLETEXT_START]-->INDEX<!--[TITLETEXT_END]--></h2>
-				<!--[TITLE_END]-->
-			</div>
-
-			<hr class="sep half">
-
-			<div id="SUCCESS" class="AREA">
-				<!--[SUCCESS_START]-->
-				<div class="alert alert-success centered">
-					<strong><!--[SUCCESSTEXT_START]-->Success :)<!--[SUCCESSTEXT_END]--></strong>
+			<form class="form-signin" action="oauth2callback.php" method="POST">
+				<input type="hidden" name="page" value="login">
+				<input type="hidden" name="dologin" value="1">
+				<div id="TITLE" class="AREA">
+					<!--[TITLE_START]-->
+					<h2 class="form-signin-heading"><!--[TITLETEXT_START]-->INDEX<!--[TITLETEXT_END]--></h2>
+					<!--[TITLE_END]-->
 				</div>
-				<!--[SUCCESS_END]-->
-			</div>
 
-			<div id="FAIL" class="AREA">
-				<!--[FAIL_START]-->
-				<div class="alert alert-danger centered">
-					<strong><!--[FAILTEXT_START]-->Error :(<!--[FAILTEXT_END]--></strong>
+				<hr class="sep half">
+
+				<div id="SUCCESS" class="AREA">
+					<!--[SUCCESS_START]-->
+					<div class="alert alert-success centered">
+						<strong><!--[SUCCESSTEXT_START]-->Success :)<!--[SUCCESSTEXT_END]--></strong>
+					</div>
+					<!--[SUCCESS_END]-->
 				</div>
-				<!--[FAIL_END]-->
-			</div>
 
-			<hr class="sep half">
-
-			<div id="LOGINBTN" class="AREA">
-				<!--[LOGINBTN_START]-->
-				<div class="login-wrap">
-					<a class="btn-a btn-lg btn-login btn-block" href="?dologin">Accedi</a>
+				<div id="FAIL" class="AREA">
+					<!--[FAIL_START]-->
+					<div class="alert alert-danger centered">
+						<strong><!--[FAILTEXT_START]-->Error :(<!--[FAILTEXT_END]--></strong>
+					</div>
+					<!--[FAIL_END]-->
 				</div>
-				<!--[LOGINBTN_END]-->
-			</div>
 
-			<div id="LOGOUTBTN" class="AREA">
-				<!--[LOGOUTBTN_START]-->
-				<div class="login-wrap">
-					<a class="btn-a btn-lg btn-login btn-block" href="?dologout">Disconnetti</a>
+				<hr class="sep half">
+
+				<div id="LOGINBTN" class="AREA">
+					<!--[LOGINBTN_START]-->
+					<div class="login-wrap">
+						<a class="btn-a btn-lg btn-login btn-block" href="?dologin">Accedi</a>
+					</div>
+					<!--[LOGINBTN_END]-->
 				</div>
-				<!--[LOGOUTBTN_END]-->
-			</div>
 
-			<hr class="sep one">
-
-			<div id="INFO" class="AREA">
-				<!--[INFO_START]-->
-				<div class="alert alert-info">
-					<strong><!--[INFOTEXT_START]--><p>IP: 172.16.13.37</p><p>E-Mail: delli.andrea@itismeucci.com</p><p>Nome: Andrea Delli</p><p>Connesso alla rete: Rete Cablata</p><p>Gruppo di appartenenza: Studenti</p><p>Connesso il : 15/05/2019 08:14:42</p><p>Dati Ricevuti : 1.98 MB</p><p>Dati Inviati : 344.98 KB</p><p>Velocità media Download : 13.2 KB/sec</p><p>Velocità media Upload : 1.35 KB/sec</p><p></p><!--[INFOTEXT_END]--></strong>
+				<div id="LOGOUTBTN" class="AREA">
+					<!--[LOGOUTBTN_START]-->
+					<div class="login-wrap">
+						<a class="btn-a btn-lg btn-login btn-block" href="?dologout">Disconnetti</a>
+					</div>
+					<!--[LOGOUTBTN_END]-->
 				</div>
-				<!--[INFO_END]-->
-			</div>
 
-			<hr>
-			<div class="alert alert-primary">
-				Per collegarsi a internet utilizza il tuo account di <b>posta istituzionale</b>. <hr>
-                Si ricorda che l'attività è <b>soggetta a monitoraggio</b> come previsto dalla normativa vigente. <hr>
-                <b>ATTENZIONE</b>: ricordati di effettuare la disconnessione al termine della sessione di lavoro.
-			</div>
+				<hr class="sep one">
+
+				<div id="INFO" class="AREA">
+					<!--[INFO_START]-->
+					<div class="alert alert-info">
+						<strong><!--[INFOTEXT_START]--><p>IP: 172.16.13.37</p><p>E-Mail: delli.andrea@itismeucci.com</p><p>Nome: Andrea Delli</p><p>Connesso alla rete: Rete Cablata</p><p>Gruppo di appartenenza: Studenti</p><p>Connesso il : 15/05/2019 08:14:42</p><p>Dati Ricevuti : 1.98 MB</p><p>Dati Inviati : 344.98 KB</p><p>Velocità media Download : 13.2 KB/sec</p><p>Velocità media Upload : 1.35 KB/sec</p><p></p><!--[INFOTEXT_END]--></strong>
+					</div>
+					<!--[INFO_END]-->
+				</div>
+
+				<hr>
+				<div class="alert alert-primary">
+					Per collegarsi a internet utilizza il tuo account di <b>posta istituzionale</b>. <hr>
+					Si ricorda che l'attività è <b>soggetta a monitoraggio</b> come previsto dalla normativa vigente. <hr>
+					<b>ATTENZIONE</b>: ricordati di effettuare la disconnessione al termine della sessione di lavoro.
+				</div>
+			</form>
 		</div>
 	</div>
 
@@ -128,7 +132,7 @@
 
 	</div>
 
-	<img src="resources/logo.png" class="background-logo" alt="Logo ITIS Meucci">
+	<img src="resources/logo.png" class="background-logo" alt="ITIS Meucci">
 	<!--jQuery-->
 	<script src="js/$.js"></script>
 
