@@ -251,16 +251,31 @@ html {
 	box-shadow: 0px 5px 5px -5px rgba(238, 34, 34, 0.5);
 }
 
+.red::selection {
+	background: rgba(238, 34, 34, 0.8);
+	color: white;
+}
+
 .blue {
 	color: #3facea;
 	border-bottom: 1px solid #3facea;
 	box-shadow: 0px 5px 5px -5px rgba(63, 172, 234, 0.5);
 }
 
+.blue::selection {
+	background: rgba(63, 172, 234, 0.8);
+	color: white;
+}
+
 .green {
 	color: #40ad6f;
 	border-bottom: 1px solid #40ad6f;
 	box-shadow: 0px 5px 5px -5px rgba(64, 173, 111, 0.5);
+}
+
+.green::selection {
+	background: rgba(64, 173, 111, 0.8);
+	color: white;
 }
 
 /*
@@ -319,6 +334,11 @@ html {
 	padding-right: 0.5em;
 }
 
+#INFO table td::selection{
+	background: rgba(64, 173, 111, 0.8);
+	color: white;
+}
+
 /*
 ────────────────────────────────────────────────────────────┤♦│
 ████████████████████████████████████████████████████████████│!│-BUTTONS
@@ -363,6 +383,16 @@ html {
 	outline: none;
 }
 
+.btn-blue span::selection {
+	background: rgba(63, 172, 234, 0.8);
+	color: white;
+}
+
+.btn-blue img::selection, .btn-red img::selection {
+	background: transparent;
+	color: white;
+}
+
 .btn-red {
 	background-color: rgba(238, 34, 34, 0.2);
 }
@@ -375,6 +405,11 @@ html {
 	box-shadow: 0px 5px 5px -2px rgba(217, 217, 217, 1);
 	background-color: rgba(238, 34, 34, 0.5);
 	outline: none;
+}
+
+.btn-red span::selection {
+	background: rgba(238, 34, 34, 0.7);
+	color: white;
 }
 
 .btn-edited img {
@@ -475,6 +510,11 @@ html {
 	padding-right: 0.5em;
 }
 
+#DENIED table td::selection {
+	background: rgba(238, 34, 34, 0.7);
+	color: white;
+}
+
 .alertExclamation {
 	width: 100%;
 	padding: 0;
@@ -537,15 +577,25 @@ html {
 }
 
 .alert-danger {
-	color: rgba(238, 34, 34, 1) !important;
+	color: rgb(238, 34, 34) !important;
 	border-left: 1px dashed rgba(238, 34, 34, 1) !important;
 	border-right: 1px dashed rgba(238, 34, 34, 1) !important;
+}
+
+.alert-danger ::selection {
+	background: rgba(238, 34, 34, 0.7) !important;
+	color: white;
 }
 
 .alert-success {
 	color: rgb(45, 156, 93) !important;
 	border-left: 1px dashed rgba(64, 173, 111, 1) !important;
 	border-right: 1px dashed rgba(64, 173, 111, 1) !important;
+}
+
+.alert-success ::selection {
+	background: rgb(64, 173, 111) !important;
+	color: white;
 }
 
 .alert-primary {
