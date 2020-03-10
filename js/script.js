@@ -74,6 +74,9 @@ str = str.split('<!--[LOGINBTN_START]-->').pop().split('<!--[LOGINBTN_END]-->')[
 if(str != ""){
 	$("#LOGINBTN").html("");
 	$("#LOGINBTN").append($("#loginbtn-obj"));
+
+	// Se il login non è ancora stato effettuato, nascondi il messaggio per ricordare la disconnessione
+	$("#msg-disconnessione").addClass("hidden");
 }
 
 // logout
@@ -84,6 +87,9 @@ str = str.split('<!--[LOGOUTBTN_START]-->').pop().split('<!--[LOGOUTBTN_END]-->'
 if(str != ""){
 	$("#LOGOUTBTN").html("");
 	$("#LOGOUTBTN").append($("#logoutbtn-obj"));
+
+	// Se il login è stato effettuato, nascondi il messaggio per ricordare di connettersi con l'account istituzionale
+	$("#msg-posta-istituzionale").addClass("hidden");
 }
 
 } catch(ex) {}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 
+<!-- Repository GitHub: https://github.com/RonPlusSign/Firebird-pages -->
 <head>
 
 	<!-- Meta tags -->
@@ -93,9 +94,15 @@
 
 				<hr>
 				<div class="alert alert-primary">
-					Per collegarsi a internet utilizza il tuo account di <b>posta istituzionale</b>. <hr>
-					Si ricorda che l'attività è <b>soggetta a monitoraggio</b> come previsto dalla normativa vigente. <hr>
-					<b>ATTENZIONE</b>: ricordati di effettuare la disconnessione al termine della sessione di lavoro.
+					<div id="msg-posta-istituzionale">
+						<p>Per collegarsi a internet utilizza il tuo account di <b>posta istituzionale</b>.</p><hr>
+					</div>
+					<div id="msg-monitoraggio">
+						<p>Si ricorda che l'attività è <b>soggetta a monitoraggio</b> come previsto dalla normativa vigente.</p>
+					</div>
+					<div id="msg-disconnessione">
+						<p><hr><b>ATTENZIONE</b>: ricordati di effettuare la disconnessione da tutti i servizi web utilizzati.</p>
+					</div>
 				</div>
 			</form>
 		</div>
@@ -103,7 +110,8 @@
 
 	<hr class="sep half">
 
-	<div id="objects">
+	<!-- Objects (not displayed) -->
+	<div class="hidden">
 		<!-- Toggle -->
 		<div id="toggle-obj">
 			<div id="toggle"><i class="fas fa-chevron-down"></i></div>
@@ -134,10 +142,11 @@
 
 	<img src="resources/logo.png" class="background-logo" alt="ITIS Meucci">
 	<!--jQuery-->
-	<script src="js/$.js"></script>
+	<script defer src="js/$.js"></script>
 
-	<script src="js/script.js"></script>
-	<script src="js/TableToggle.js"></script>
+	<!-- Custom scripts -->
+	<script defer src="js/script.js"></script>
+	<script defer src="js/TableToggle.js"></script>
 
 </body>
 

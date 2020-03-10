@@ -1,9 +1,9 @@
 /*
-main palette:
-#ee2222		rgba(238, 34, 34, 1)	[red]
-#3facea		rgba(63, 172, 234, 1)	[blue]
-#40ad6f		rgba(64, 173, 111, 1)	[green]
-#f8c300		rgba(248, 195, 0, 1)	[yellow]
+Main palette:
+#ee2222		rgb(238, 34, 34)	[red]
+#3facea		rgb(63, 172, 234)	[blue]
+#40ad6f		rgb(64, 173, 111)	[green]
+#f8c300		rgb(248, 195, 0)	[yellow]
 */
 
 /*
@@ -25,11 +25,6 @@ html {
 	margin: 0;
 	font-size: 1.05em;
 }
-
-html {
-	display: none;
-}
-
 
 /*
 ────────────────────────────────────────────────────────────┤♦│
@@ -110,13 +105,6 @@ hr.sevenhalf {
 ████████████████████████████████████████████████████████████│!│-CARD-
 ────────────────────────────────────────────────────────────┤♦│
 */
-
-body,
-html {
-	padding: 0;
-	margin: 0;
-	font-size: 1.05em;
-}
 
 .card {
 	font-family: Ubuntu;
@@ -335,7 +323,7 @@ html {
 }
 
 #INFO table td::selection{
-	background: rgba(64, 173, 111, 0.8);
+	background: rgba(64, 173, 111, 0.7);
 	color: white;
 }
 
@@ -526,7 +514,7 @@ html {
 	left: 50%;
 	color: #e35b55;
 	font-size: 250%;
-	animation: pulse 3s infinite;
+	animation: pulse 2.5s infinite;
 }
 
 @keyframes pulse {
@@ -594,7 +582,7 @@ html {
 }
 
 .alert-success ::selection {
-	background: rgb(64, 173, 111) !important;
+	background: rgba(45, 156, 93, 0.8) !important;
 	color: white;
 }
 
@@ -604,13 +592,17 @@ html {
 	border-right: 1px dashed rgb(24, 78, 122) !important;
 }
 
+.alert-primary p {
+	margin: 0;
+}
+
 /*
 ────────────────────────────────────────────────────────────┤♦│
 ████████████████████████████████████████████████████████████│!│- OTHER
 ────────────────────────────────────────────────────────────┤♦│
 */
 
-#objects {
+.hidden {
 	display: none;
 }
 
@@ -624,4 +616,8 @@ html {
 	left: 100%;
 	top: 100%;
 	padding: 2em;
+}
+
+img::selection {
+	background: transparent;
 }
