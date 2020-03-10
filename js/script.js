@@ -103,24 +103,24 @@ La gestione del toggle è in "tableToggle.js"
 */
 
 try {
-  // Get the content to manipulate
+  // Prendi il contenuto da manipolare
   var str = document.querySelectorAll("#INFO")[0].innerHTML;
   str = str
     .split("<!--[INFO_START]-->")
     .pop()
     .split("<!--[INFO_END]-->")[0];
 
-  // If the info area is not empty
+  // Controlla se l'area d'info non è vuota
   if (str != "") {
     str = str
       .split("<!--[INFOTEXT_START]-->")
       .pop()
       .split("<!--[INFOTEXT_END]-->")[0];
 
-    // Add the toggle button
+    // Aggiungi il bottone di toggle (per apertura/chiusura della tabella)
     $("#INFO").before($("#toggle-obj"));
 
-    // List of font-awesome icons
+    // Lista delle icone di font-awesome
     var list = [
       "fas fa-user",
       "far fa-envelope",
@@ -134,25 +134,30 @@ try {
       "fas fa-tachometer-alt"
     ];
 
-    // Swap 2 items in an array
+    /**
+     * Inverte 2 elementi all'interno dell'array
+     * @param {[]} arr array di elementi
+     * @param {number} indexA primo indice
+     * @param {number} indexB secondo indice
+     */
     function swapArrayElements(arr, indexA, indexB) {
       var temp = arr[indexA];
       arr[indexA] = arr[indexB];
       arr[indexB] = temp;
     }
 
-    // Remove all the </p>
+    // Rimuovi tutti i </p>
     str = str.replace(/\<\/\p\>/g, "");
-    // Split all the info elements
+    // Dividi tutti gli elementi delle info
     var camps = str.split("<p>");
-    // Remove the empty elements
+    // Rimuovi gli elementi vuoti
     camps = camps.filter(function(el) {
       return el != "";
     });
 
     swapArrayElements(camps, 0, 2);
 
-    // Create the table
+    // Creazione della tabella
     var i = 0;
     var table = "<table>";
     camps.forEach(function(el) {
@@ -163,7 +168,7 @@ try {
     });
     table += "</table>";
 
-    // Add the table to the DOM
+    // Aggiunta della tabella al DOM
     $("#INFO").html("");
     $("#INFO").append($(table));
   }
@@ -179,17 +184,17 @@ Il contenuto cambia da delle frasi separate da <br> a una tabella
 */
 
 try {
-  // Get the content to manipulate
+  // Prendi il contenuto da manipolare
   var str = document.querySelectorAll("#DENIED")[0].innerHTML;
   str = str
     .split("<!--[FAILTEXT_START]-->")
     .pop()
     .split("<!--[FAILTEXT_END]-->")[0];
 
-  // Split the fields
+  // Dividi i campi
   str = str.split("<br>");
 
-  // Create the table
+  // Creazione della tabella
   var firstTr = "<tr><td>" + str[0] + ":</td><td>" + str[1] + "</td></tr>";
   var secondTr =
     "<tr><td>" +
@@ -200,7 +205,7 @@ try {
 
   var table = "<table>" + firstTr + secondTr + "</table>";
 
-  // Add the table to the DOM
+  // Aggiunta della tabella al DOM
   $("#DENIED").html("");
   $("#DENIED").append($(table));
 } catch (ex) {}
