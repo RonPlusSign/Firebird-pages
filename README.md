@@ -23,7 +23,7 @@ Il lavoro da noi svolto è stato rifare i due file html (index.html e denied.htm
 | denied.html          | Pagina utilizzata per mostrare un errore all'utente (esempio: contenuto bloccato) |
 | style.css            | Pagina di stile principale                                                        |
 | js/$.js              | jQuery                                                                            |
-| js/TableToggle.js    | funzione che gestisce la \<table> con informazioni sull’utente                     |
+| js/TableToggle.js    | funzione che gestisce la \<table> con informazioni sull’utente                    |
 | js/script.js         | funzione dedicata a modificare l’HTML ricevuto nel modo desiderato                |
 | bundle/bootstrap/    | Bootstrap v4.4                                                                    |
 | bundle/font-awesome/ | Font-Awesome Free v5.8.2                                                          |
@@ -55,4 +55,6 @@ Questo è lo script più importante. Quando la pagina html viene generata, le in
 
 Questo script gestisce il formato dei dati scritti all’interno dell’HTML, cambiandone il formato in quello desiderato per poi modificarne lo stile col file CSS.
 
-**Logica di base per script.js**: Tutti i commenti nell’HTML sono compresi in un `<div>` con un id specifico relativo a cosa racchiude. **script.js** guarda all’interno di questi `<div>` e decide cosa fare: A pescindere dal fatto che l’utente sia connesso oppure no, Firebird non rimuove i commenti ma li lascia vuoti. Lo script controlla se questi sono vuoti o pieni e decide cosa fare a proposito. Esempio pratico: se il div che racchiude il commento per le informazioni sull’utente è vuoto, allora lo script non fa apparire il bottone per “ToggleTable".
+**Logica di base per script.js**: Tutti i commenti nell’HTML sono compresi in un `<div>` con un id specifico relativo a cosa racchiude. **script.js** guarda all’interno di questi `<div>` e decide cosa fare: A pescindere dal fatto che l’utente sia connesso oppure no, Firebird non rimuove i commenti ma li lascia vuoti. Lo script controlla se questi sono vuoti o pieni e decide cosa fare di conseguenza.
+Esempio pratico: se il div che racchiude il commento per le informazioni sull’utente è vuoto, allora lo script non fa apparire il bottone per “ToggleTable".
+Altro esempio: i consigli sulla connessione vengono nascosti o modificati a seconda dello stato della connessione. (es. "Ricordati di effettuare la disconnessione" viene visualizzato soltanto se l'utente è loggato.)
