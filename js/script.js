@@ -31,8 +31,10 @@ try {
       $("#TITLE h2").addClass("blue");
       $("#TITLE h2").text("Effettua il login");
 
-      // Se il login non è ancora stato effettuato, nascondi il messaggio per ricordare la disconnessione
-      $("#msg-disconnessione").addClass("hidden");
+      // Cambia il contenuto del messaggio
+      $("#msg-disconnessione").html(
+        "<p><hr><b>ATTENZIONE</b>: ricordati di effettuare la disconnessione al termine della sessione di lavoro.</p>"
+      );
       break;
 
     // Connected
@@ -42,10 +44,6 @@ try {
 
       // Se il login è stato effettuato, nascondi il messaggio per ricordare di connettersi con l'account istituzionale
       $("#msg-posta-istituzionale").addClass("hidden");
-      // Cambia il contenuto del messaggio
-      $("#msg-disconnessione").html(
-        "<p><hr><b>ATTENZIONE</b>: ricordati di effettuare la disconnessione al termine della sessione di lavoro.</p>"
-      );
       break;
 
     // Denied
