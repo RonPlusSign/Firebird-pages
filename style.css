@@ -258,7 +258,7 @@ hr.sevenhalf {
 }
 
 .blue::selection {
-  background: rgba(63, 172, 234, 0.8);
+  background: rgba(46, 164, 233, 0.8);
   color: white;
 }
 
@@ -379,8 +379,8 @@ hr.sevenhalf {
 }
 
 .btn-blue span::selection {
-  background: rgba(63, 172, 234, 0.8);
-  color: white;
+  background: rgba(46, 164, 233, 0.8);
+    color: white;
 }
 
 .btn-blue img::selection,
@@ -599,6 +599,11 @@ hr.sevenhalf {
   color: rgb(37, 102, 155) !important;
   border-left: 1px dashed rgb(24, 78, 122) !important;
   border-right: 1px dashed rgb(24, 78, 122) !important;
+}
+
+.alert-primary ::selection {
+  background: rgba(46, 164, 233, 0.8) !important;
+  color: white;
 }
 
 .alert-primary p {
